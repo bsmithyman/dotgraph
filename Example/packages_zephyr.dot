@@ -1,0 +1,35 @@
+digraph "packages_zephyr" {
+charset="utf-8"
+rankdir=BT
+"0" [label="zephyr.backend", shape="box"];
+"1" [label="zephyr.backend.analytical", shape="box"];
+"2" [label="zephyr.backend.discretization", shape="box"];
+"3" [label="zephyr.backend.eurus", shape="box"];
+"4" [label="zephyr.backend.meta", shape="box"];
+"5" [label="zephyr.backend.minizephyr", shape="box"];
+"6" [label="zephyr.backend.solver", shape="box"];
+"7" [label="zephyr.backend.source", shape="box"];
+"8" [label="zephyr.frontend", shape="box"];
+"9" [label="zephyr.frontend.cli", shape="box"];
+"10" [label="zephyr.middleware", shape="box"];
+"11" [label="zephyr.middleware.fields", shape="box"];
+"12" [label="zephyr.middleware.problem", shape="box"];
+"13" [label="zephyr.middleware.survey", shape="box"];
+"14" [label="zephyr.middleware.util", shape="box"];
+"0" -> "1" [arrowhead="open", arrowtail="none"];
+"0" -> "2" [arrowhead="open", arrowtail="none"];
+"0" -> "3" [arrowhead="open", arrowtail="none"];
+"0" -> "4" [arrowhead="open", arrowtail="none"];
+"0" -> "5" [arrowhead="open", arrowtail="none"];
+"0" -> "7" [arrowhead="open", arrowtail="none"];
+"2" -> "4" [arrowhead="open", arrowtail="none"];
+"2" -> "6" [arrowhead="open", arrowtail="none"];
+"3" -> "2" [arrowhead="open", arrowtail="none"];
+"5" -> "2" [arrowhead="open", arrowtail="none"];
+"5" -> "5" [arrowhead="open", arrowtail="none"];
+"7" -> "4" [arrowhead="open", arrowtail="none"];
+"10" -> "12" [arrowhead="open", arrowtail="none"];
+"10" -> "13" [arrowhead="open", arrowtail="none"];
+"12" -> "11" [arrowhead="open", arrowtail="none"];
+"12" -> "13" [arrowhead="open", arrowtail="none"];
+}
