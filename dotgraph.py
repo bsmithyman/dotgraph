@@ -39,7 +39,7 @@ class DotGraph(object):
     
     require(["d3"], function(d3) {
     
-        var width = 800, height = 450;
+        var width = 1000, height = 450;
         var rwidth = 150, rheight=20;
         var rr = 10;
         var color = d3.scale.category10();
