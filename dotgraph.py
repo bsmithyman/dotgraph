@@ -35,7 +35,7 @@ class DotGraph(object):
     <script>
     var graph = %(JSONData)s;
     
-    require.config({paths: {d3: "http://d3js.org/d3.v3.min"}});
+    require.config({paths: {d3: "https://d3js.org/d3.v3.min"}});
     
     require(["d3"], function(d3) {
     
